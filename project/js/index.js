@@ -4,27 +4,22 @@ const sectionElm =document.querySelector(`.show`)
 const mainElmt = document.querySelector(`main`)
 const h1Elm =document.querySelector(`h1`)
 const h2Elm =document.querySelector(`h2`)
-
 let sol_system= ``;
-
-
-
-
-// API nyckel att använda ifall man enbart siktar på godkänt: solaris-vKkkQHqQboi7c6JF
 
 
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
     const data = await response.json();
-    // return.data
     console.log(data);
+    return data.key
 }
 
 async function getPlanets() {
+    const key = await getKey();
     const response = await fetch(`${BASE_URL}/bodies`, {
         method:`GET`,
         headers: {
-            'x-zocom': 'solaris-vKkkQHqQboi7c6JF' // data.key
+            'x-zocom': key
         }  
     });
     const data = await response.json();
@@ -53,7 +48,7 @@ async function getPlanets() {
                  <p class="kilo">${sol_system.distance} </p>
                  <hr class=" hr2">
                  <h3 class="moons">MÅNAR</h3>
-                 <p class="moon"> ${sol_system.moons} </p>
+                 <p class="moon"> ${sol_system.moons.join(`, `)} </p>
                  <figure class="bluesun"</figure>
                  <figure class="lightsun"</figure>
                  <figure class="lighter"</figure>
@@ -68,17 +63,15 @@ async function getPlanets() {
             const backtoPlanet=document.querySelector(`.backtoplanet`)
             backtoPlanet.addEventListener(`click`, () => {
                 sectionElm.style.display=`none`
-                mainElmt.style.display=`flex`
+                mainElmt.style.display=`grid`
                 h1Elm.style.display=`flex`
                 h2Elm.style.display=`block`
                 console.log(`funkar`);
             })
    }
-    
-            
         
 
-    planets.forEach((planets, i) => {      /// hämtar alla mina knappar på en och samma plats
+    planets.forEach((planets, i) => {
         planets.addEventListener(`click`,()=> {
             const buttonPlanets = sol_system[i]
             planetArticel(buttonPlanets)
@@ -86,19 +79,14 @@ async function getPlanets() {
             sectionElm.style.display=`block`
             mainElmt.style.display=`none`
             h1Elm.style.display=`none`
-            h2Elm.style.display=`none`
-
-            
-
+            h2Elm.style.display=`none`  
     })
              })
 
      console.log(planets);
 
 
- 
-
- async function getKod(){ /// för att köra key och planet 
+ async function getKod(){
     await getKey();
    await getPlanets();
    

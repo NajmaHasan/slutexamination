@@ -46,14 +46,12 @@ margin: 3rem;
 }
 
 main.contanier{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(9,1fr);
   gap: 2.6rem;
+  align-items: center;
 
 }
 
@@ -144,23 +142,26 @@ grid-column: 8/9;
 }
 
 .show{
+  background-image: url("../img/background-starry-sky-8.jpg");
   display: none;
-  background-image: url(img/background-starry-sky-8.jpg);
   background-size: cover;
-  background-position: center;
+
 }
 
 article{
   color: white;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(9, 1fr);
   height: 100vh;
   gap: 1rem .5rem;
+  max-width: 500px;
+  margin: 0 auto;
+
 }
 
 article h1{
-  grid-column: 2/3;
+  grid-column: 1/3;
   grid-row: 1/2;
   font-family: 'Secular One';
 font-style: normal;
@@ -171,12 +172,10 @@ letter-spacing: 0.09em;
 }
 
 article h4{
-  grid-column: 2/3;
+  grid-column: 1/3;
   grid-row: 2/3;
   color: #FFD029;
   letter-spacing: 0.6em;
-  width: 625px;
-height: 24px;
 font-family: 'Lora';
 font-style:normal;
 font-weight: 400;
@@ -185,9 +184,7 @@ line-height: 100%;
 }
 
 .desc {
-  grid-column: 2/4;
-  width: 640px;
-height: 217px;
+  grid-column: 1/3;
 grid-row: 3/4;
 font-family: 'Roboto Condensed';
 font-style: normal;
@@ -201,8 +198,7 @@ letter-spacing: .1rem;
 .omkrets{
 grid-column: 2/3;
 grid-row: 5/6;
-width: 304px;
-height: 18px;
+
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -221,10 +217,9 @@ font-family: 'Roboto Condensed';
 opacity: .6;
 }
 .km{
-grid-column:3/4 ;
+grid-column:2/3 ;
 grid-row: 5/6;
-width: 304px;
-height: 18px;
+
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -234,7 +229,7 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
 }
 .kilo{
-  grid-column: 3/4;
+  grid-column: 2/3;
 grid-row: 5/6;
 margin-top: 2rem;
 letter-spacing: 0.16em;
@@ -246,8 +241,7 @@ opacity: .6;
 .maxtemp{
   grid-column: 2/3;
   grid-row: 6/7;
-  width: 304px;
-height: 18px;
+
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -266,10 +260,8 @@ color: white;
   opacity: .6;
 }
 .mintemp{
-  grid-column:3/4 ;
+  grid-column:2/3 ;
 grid-row: 6/7;
-width: 304px;
-height: 18px;
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -279,7 +271,7 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
 }
 .min{
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 6/7;
   margin-top: 2rem;
   letter-spacing: 0.16em;
@@ -305,11 +297,13 @@ color: #FFFFFF;
 
 .backtoplanet{
   display: flex;
-  display: block;
   color: white;
   font-family: 'Secular One';
   font-size: 25px;
- 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
 }
 .hr2{
   grid-column: 2/3;
