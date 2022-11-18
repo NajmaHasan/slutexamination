@@ -1,17 +1,15 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 body{
-  background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
-  height: 100%;
-
+background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+height: 100%;
 }
 header {
-  position: absolute;
-  right: 1rem;
+position: absolute;
+right: 1rem;
 }
 h1.solsytem{
 color: white ;
@@ -26,9 +24,7 @@ line-height: 100%;
 text-align: right;
 letter-spacing: 0.09em;
 margin: 3rem;
-
 }
-
 h2.solaris{
 color:  #FFD029;
 display: flex;
@@ -42,33 +38,28 @@ line-height: 100%;
 text-align: right;
 letter-spacing: 0.6em;
 margin: 3rem;
-
 }
-
 main.contanier{
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(9,1fr);
-  gap: 2rem;
-  align-items: center;
-  padding: 3rem;
-
+height: 100vh;
+width: 100vw;
+display: grid;
+grid-template-columns: repeat(9,1fr);
+gap: 2rem;
+align-items: center;
+padding: 3rem;
 }
-
 .btnsol{
-  position: fixed;
-  width: 1278px;
-  height: 1278px;
-  left: -1160px;
-  top: -189px;
-  background: #FFD029;
-  border: #FFD029;
-  box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
-  border-radius: 50%;
-  grid-column: 1/2;
+position: fixed;
+width: 1278px;
+height: 1278px;
+left: -1160px;
+top: -189px;
+background: #FFD029;
+border: #FFD029;
+box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
+border-radius: 50%;
+grid-column: 1/2;
 }
-
 .btnmerkurius{
 grid-column: 2/3;
 width: 14px;
@@ -77,7 +68,6 @@ border: #888888;
 background: white;
 border-radius: 50%;
 }
-
 .btnvenus{
 width: 26px;
 height: 26px;
@@ -86,49 +76,44 @@ background: #E7CDCD;
 border-radius: 50%;
 grid-column: 3/4;
 }
-
 .btnjorden{
-  width: 28px;
-  height: 28px;
-  border: #428ED5;
-  background: #428ED5;
-  border-radius: 50%;
-  grid-column: 4/5;
+width: 28px;
+height: 28px;
+border: #428ED5;
+background: #428ED5;
+border-radius: 50%;
+grid-column: 4/5;
 }
-
 .btnmars{
-  width: 14px;
-  height: 14px;
-  border: #EF5F5F;
-  background: #EF5F5F;
-  border-radius: 50%;
-  grid-column:5/6 ;
+width: 14px;
+height: 14px;
+border: #EF5F5F;
+background: #EF5F5F;
+border-radius: 50%;
+grid-column:5/6 ;
 }
-
 .btnjupiter{
-  width: 188px;
-  height: 188px;
-  border: #E29468;
-  background: #E29468;
-  border-radius: 50%;
-  grid-column: 6/7;
+width: 188px;
+height: 188px;
+border: #E29468;
+background: #E29468;
+border-radius: 50%;
+grid-column: 6/7;
 }
-
 .btnsaturnus1{
-  width: 144px;
-  height: 144px;
-  border: #C7AA72;
-  background: #C7AA72;
-  border-radius: 50%;
-  grid-column: 7/8;
+width: 144px;
+height: 144px;
+border: #C7AA72;
+background: #C7AA72;
+border-radius: 50%;
+grid-column: 7/8;
 }
 #btnsaturnus2{
-
-  width: 218px;
-  height: 5.5px;
-  background: rgba(255, 255, 255, 0.4);
-  transform: rotate(-30deg);
-  display: flex;
+width: 218px;
+height: 5.5px;
+background: rgba(255, 255, 255, 0.4);
+transform: rotate(-30deg);
+display: flex;
 margin-left: -35px;
 border-radius: 50%;
 }
@@ -140,60 +125,52 @@ background: #C9D4F1;
 border-radius: 50%;
 grid-column: 8/9;
 }
-
 .btnneptunus{
-  width: 66px;
-  height: 66px;
-  border: #7A91A7;
-  background: #7A91A7;
-  border-radius: 50%;
-  grid-column: 9/10;
+width: 66px;
+height: 66px;
+border: #7A91A7;
+background: #7A91A7;
+border-radius: 50%;
+grid-column: 9/10;
 }
-
 .show{
-  background-image: url("../img/background-starry-sky-8.jpg");
-  display: none;
-  background-size: cover;
-
+background-image: url("../img/background-starry-sky-8.jpg");
+display: none;
+background-size: cover;
 }
-
 article{
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  height: 100vh;
-  gap: 1rem .5rem;
-  max-width: 500px;
-  margin: 0 auto;
-
+color: white;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(9, 1fr);
+height: 100vh;
+gap: 1rem .5rem;
+max-width: 500px;
+margin: 0 auto;
 }
-
 article h1{
-  grid-column: 1/3;
-  grid-row: 1/2;
-  font-family: 'Secular One';
+grid-column: 1/3;
+grid-row: 1/2;
+font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
 font-size: 60px;
 line-height: 100%;
 letter-spacing: 0.09em;
 }
-
 article h4{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  color: #FFD029;
-  letter-spacing: 0.6em;
+grid-column: 1/3;
+grid-row: 2/3;
+color: #FFD029;
+letter-spacing: 0.6em;
 font-family: 'Lora';
 font-style:normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 100%;
 }
-
 .desc {
-  grid-column: 1/3;
+grid-column: 1/3;
 grid-row: 3/4;
 font-family: 'Roboto Condensed';
 font-style: normal;
@@ -203,11 +180,9 @@ line-height: 170%;
 opacity: .6;
 letter-spacing: .1rem;
 }
-
 .omkrets{
 grid-column: 1/2;
 grid-row: 5/6;
-
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -216,7 +191,6 @@ line-height: 100%;
 letter-spacing: 0.09em;
 color: white;
 }
-
 .omkret{
 grid-column: 1/2;
 grid-row: 5/6;
@@ -228,7 +202,6 @@ opacity: .6;
 .km{
 grid-column:2/3 ;
 grid-row: 5/6;
-
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -238,7 +211,7 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
 }
 .kilo{
-  grid-column: 2/3;
+grid-column: 2/3;
 grid-row: 5/6;
 margin-top: 2rem;
 letter-spacing: 0.16em;
@@ -246,11 +219,9 @@ font-family: 'Roboto Condensed';
 font-weight: 400;
 opacity: .6;
 }
-
 .maxtemp{
-  grid-column: 2/3;
-  grid-row: 6/7;
-
+grid-column: 2/3;
+grid-row: 6/7;
 font-family: 'Secular One';
 font-style: normal;
 font-weight: 400;
@@ -260,13 +231,13 @@ letter-spacing: 0.09em;
 color: white;
 }
 .max{
-  grid-column: 2/3;
-  grid-row: 6/7;
-  margin-top: 2rem;
-  letter-spacing: 0.16em;
-  font-family: 'Roboto Condensed';
-  font-weight: 400;
-  opacity: .6;
+grid-column: 2/3;
+grid-row: 6/7;
+margin-top: 2rem;
+letter-spacing: 0.16em;
+font-family: 'Roboto Condensed';
+font-weight: 400;
+opacity: .6;
 }
 .mintemp{
   grid-column:1/2 ;
@@ -280,62 +251,59 @@ letter-spacing: 0.09em;
 color: #FFFFFF;
 }
 .min{
-  grid-column: 1/2;
-  grid-row: 6/7;
-  margin-top: 2rem;
-  letter-spacing: 0.16em;
-  font-family: 'Roboto Condensed';
-  font-weight: 400;
-  opacity: .6;
+grid-column: 1/2;
+grid-row: 6/7;
+margin-top: 2rem;
+letter-spacing: 0.16em;
+font-family: 'Roboto Condensed';
+font-weight: 400;
+opacity: .6;
 }
-
 .moons{
-  grid-column: 1/2;
-  grid-row: 8/9;
+grid-column: 1/2;
+grid-row: 8/9;
 }
-
 .moon{
-  grid-column: 1/2;
-  grid-row: 8/9;
-  margin-top: 2rem;
-  letter-spacing: 0.16em;
-  font-family: 'Roboto Condensed';
-  font-weight: 400;
-  opacity: .6;
+grid-column: 1/3;
+grid-row: 8/9;
+margin-top: 2rem;
+letter-spacing: 0.16em;
+font-family: 'Roboto Condensed';
+font-weight: 400;
+opacity: .6;
 }
-
 .backtoplanet{
-  display: flex;
-  color: white;
-  font-family: 'Secular One';
-  font-size: 25px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  right: 10rem;
+display: flex;
+color: white;
+font-family: 'Secular One';
+font-size: 25px;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 100;
+right: 10rem;
+cursor: pointer;
 }
 .hr2{
-  grid-column: 1/3;
-  grid-row:7/7 ;
-  border-top: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+grid-column: 1/3;
+grid-row:7/7 ;
+border-top: none;
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-right: none;
+border-left: none;
+border-bottom: none;
 }
 .hr1{
-  grid-column: 1/3;
+grid-column: 1/3;
 grid-row: 4/4;
-  border-top: none;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+border-top: none;
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-right: none;
+border-left: none;
+border-bottom: none;
 }
-
 .bluesun{
-  position: fixed;
+position: fixed;
 width: 1278px;
 height: 1278px;
 left: -1160px;
@@ -343,26 +311,22 @@ top: -189px;
 background: #428ED5;
 box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
 border-radius: 50%;
-
 }
-
 .lightsun{
-  position: fixed;
+position: fixed;
 width: 1340px;
 height: 1340px;
 left: -1170px;
 top: -222px;
 border-radius: 80%;
 background: rgba(66, 142, 212, 0.1);
-
 }
-
 .lighter{
-  position: fixed;
-  background: rgba(66, 142, 212, 0.06);
-  width: 1404px;
-  height: 1404px;
-  left: -1184px;
-  top: -254px;  
+position: fixed;
+background: rgba(66, 142, 212, 0.06);
+width: 1404px;
+height: 1404px;
+left: -1184px;
+top: -254px;  
 border-radius: 90%;
 }

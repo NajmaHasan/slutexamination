@@ -6,14 +6,12 @@ const h1Elm =document.querySelector(`h1`)
 const h2Elm =document.querySelector(`h2`)
 let sol_system= ``;
 
-
 async function getKey() {
     const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
     const data = await response.json();
     console.log(data);
     return data.key
 }
-
 async function getPlanets() {
     const key = await getKey();
     const response = await fetch(`${BASE_URL}/bodies`, {
@@ -27,9 +25,6 @@ async function getPlanets() {
     console.log(data);
     console.log(sol_system);
 }
-
-
-
    function planetArticel(sol_system){
     sectionElm.innerHTML=``;
     let template=`
@@ -52,10 +47,8 @@ async function getPlanets() {
                  <figure class="bluesun"</figure>
                  <figure class="lightsun"</figure>
                  <figure class="lighter"</figure>
-
             </article>  
             <footer class="backtoplanet">Back To First Page</footer> 
-
             `
             console.log('planetArticel')
 
@@ -68,9 +61,7 @@ async function getPlanets() {
                 h2Elm.style.display=`block`
                 console.log(`funkar`);
             })
-   }
-        
-
+   }    
     planets.forEach((planets, i) => {
         planets.addEventListener(`click`,()=> {
             const buttonPlanets = sol_system[i]
@@ -82,9 +73,7 @@ async function getPlanets() {
             h2Elm.style.display=`none`  
     })
              })
-
      console.log(planets);
-
 
  async function getKod(){
     await getKey();
